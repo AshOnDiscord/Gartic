@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Vite + TS</title>
+    </head>
+    <body>
+        <div id="app" class="flex justify-center items-center min-h-screen">
+            <div class="fixed bottom-0 right-0">
+                <input type="color" name="color" id="color-picker" />
+                <input
+                    type="number"
+                    name="size"
+                    id="size-picker"
+                    class="outline outline-slate-300"
+                />
+            </div>
+            <canvas
+                id="canvas"
+                class="outline outline-slate-300 translate-x-0 translate-y-0"
+                style="backface-visibility: hidden"
+            ></canvas>
+        </div>
+        <script type="module" src="/src/main.ts"></script>
+    </body>
+</html>
